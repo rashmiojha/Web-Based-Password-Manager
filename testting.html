@@ -1,0 +1,30 @@
+<script src="js/pbkdf2.js"></script>
+
+<script src="js/aes.js"></script>
+<script>
+   
+    var salt = CryptoJS.lib.WordArray.random(128/8);
+
+    var key128Bits = CryptoJS.PBKDF2("Secret Passphrase", salt, { keySize: 128/32 });
+    var key256Bits = CryptoJS.PBKDF2("Secret Passphrase", salt, { keySize: 256/32 });
+    var key512Bits = CryptoJS.PBKDF2("Secret Passphrase", salt, { keySize: 512/32 });
+
+    var key512Bits1000Iterations = CryptoJS.PBKDF2("Secret Passphrase", salt, { keySize: 512/32, iterations: 1000 });
+    // var encrypted = CryptoJS.AES.encrypt("Message", key256Bits);
+
+    // var decrypted = CryptoJS.AES.decrypt(encrypted, key256Bits);
+    // var kuchbhi = CryptoJS.AES.encrypt("Message", "Secret Passphrase");
+    // var abc = CryptoJS.AES.decrypt(kuchbhi, "Secret Passphrase");
+    // alert(encrypted);
+    // alert(decrypted);
+     var encrypted = CryptoJS.AES.encrypt("Message", "Secret Passphrase");
+
+    var decrypted = CryptoJS.AES.decrypt(encrypted, "Secret Passphrase");
+    alert(encrypted);
+     var hex = decrypted.toString();//force conversion
+    var str = '';
+    for (var i = 0; i < hex.length; i += 2)
+        str += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
+    window.location.href = "Gmail.html";
+    console.log(str);
+</script>

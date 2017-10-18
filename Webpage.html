@@ -1,0 +1,124 @@
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/Webpage.css">
+	<link rel="stylesheet" type="text/css" href="css/css/font-awesome.css"/>
+	<link rel="stylesheet" type="text/css" href="css/css/font-awesome.min.css">
+	</head>
+
+	<body>
+
+<header  class="nav-black"><!--id="nav-content"-->
+
+	<!-- Logo -->
+    <div>
+      <a href="#profile">
+        <div class="logo-content" style="margin-top: -9.5px;">
+         <!--  <h4 class="short"><strong>Politician</strong></h4>
+          <span class="logo-caption">Politician</span> -->
+        </div>
+      </a>
+    </div>
+    
+    <!-- Navigation -->
+    <ul class="menu nav">
+    	<li class="mymenu"><a id="profile"><span><i class="fa fa-user"></i>Profile</span></a></li>
+        <li class="mymenu"><a id = 'profile' href="#resume"><span><i class="fa fa-pencil"></i>Gallery</span></a></li>
+        <li class="mymenu"><a href="#portfolio"><span><i class="fa fa-desktop"></i>News</i></span></a></li>
+        <li class="mymenu"><a href="#blog"><span><i class="fa fa-comment"></i>Latest Posts</span></a></li>
+        <li class="mymenu"><a href="#contact"><span><i class="fa fa-phone"></i>Contact</span></a></li>
+        <li class="mymenu"><a href="components.html"><span><i class="fa fa-bolt"></i>Press Room</span></a></li>
+    </ul>
+    
+    <!-- Copyright -->
+    <!-- <span class="copyright hidden-md">© 2014 <b>Politician</b>.</span> -->
+
+</header>
+
+   <!-- <a class="ss-close">
+    <i class="fa fa-angle-left"></i>
+   </a>  -->
+
+   <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+  
+        <div class = 'slide1'>
+          <h3>Good Quotes Good Quotes Good Quotes<br/>Good Quotes Good Quotes Good Quotes</h3>
+        </div>
+     
+        <div class = 'slide2'>
+          <h3>Good Quotes Good Quotes Good Quotes<br/>Good Quotes Good Quotes Good Quotes</h3>
+        </div>
+      </div>
+     
+       
+    <div class = 'slider-container' style='margin-left:-40px;height:843px;background-color: #F7F7F7;'>
+
+            <ul style='list-style-type:none;' id='slider-ul'>
+              <li class='active'><img src="images/sunset.jpg" class = 'img-responsive'/></li>
+              <li><img src="images/twomoon.jpg" class = 'img-responsive'/></li>
+              <li><img src="images/Beautiful_Sun_Set.jpg" class = 'img-responsive'/></li>
+            </ul>
+          </div>
+
+    <div class='container'>
+      <div id='profile_div'>
+        <div class='row'>
+          <div class='col-md-5 col-md-offset-2'>
+            <div class='box boxshift'>
+              <div class='row'>
+                
+                <div class='col-md-12'>
+                  <div class="jumbotron">
+                    <center><h1 style='font-family:FontAwesome;'>As a Politician</h1></center>
+                    <img src='images/raj_bg_imagec1.png'/>
+                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit</p>
+                    <p><a class="btn" role="button">Know More</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>     
+          <div class='col-md-5'>
+            <div class='box'>
+              <div class='row'>
+                <div class='col-md-12'>
+                  <div class="jumbotron">
+                    <center><h1 style='font-family:FontAwesome;'>As a Person</h1></center>
+                    <img src='images/raj_bg_imagec1.png'/>
+                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit</p>
+                    <p><a class="btn" role="button">Know More</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>     
+        </div>
+      </div>
+    </div>
+ 
+          
+  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+	</body>
+
+	</html>
+	<script src='js/jquery.js'></script>
+	<script src='js/jquery-1.10.2.min.js'></script>
+	<script src='js/bootstrap.js'></script>
+  <script src='js/finfout.js'></script>
+<script type="text/javascript">
+
+$("#profile").click(function()
+  {
+     $('html, body').animate({
+        scrollTop: $("#profile_div").offset().top
+    }, 2000);
+  // $(".click").hide();
+  });
+</script>
+   

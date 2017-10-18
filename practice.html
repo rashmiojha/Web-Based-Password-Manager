@@ -1,0 +1,57 @@
+<html>
+<head>
+<style type="text/css">
+	.nav_bar>li{
+		position:relative;
+		display:inline-block;
+		list-style-type: none;
+	}
+	.nav_bar>li:hover .in_nav_bar{
+		display:block;
+	}
+	.in_nav_bar{
+		position:absolute;
+		display:none;
+		left: none;
+		white-space: nowrap;
+	}
+	.in_nav_bar>li{
+		position:relative;
+		list-style-type: none;
+		/*display:none;*/
+	}
+	.in_nav_bar>li:hover .in_in_nav_bar{
+		display:block;
+	}
+	.in_in_nav_bar{
+		position: absolute;
+		display: none;
+		left:100%;
+	}
+	.in_in_nav_bar>li{
+		position: relative;
+		list-style-type: none;
+		top:0;
+		/*display:none;*/
+	}
+</style>
+</head>
+<body>
+
+<ul class='nav_bar'> 
+	<li>Home
+		<ul class='in_nav_bar'>
+			<li>Ghar
+				<ul class='in_in_nav_bar'>
+					<li>Inside ghar</li>
+					<li>Outside</li>
+				</ul>
+			</li>
+			<li>doosra ghar</li>
+		</ul>
+	</li>
+	<li>Outside</li>
+</ul>
+
+</body>
+</html>
